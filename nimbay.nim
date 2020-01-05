@@ -42,6 +42,7 @@ var names, links : seq[string]
 
 # info("Fetching " & proxies[1])
 
+
 info("Downloading list of torrents", fg = fgYellow, sty = {styleBright})
 
 proc listOfTorrents(html: string): (seq[string],seq[string]) =
@@ -65,10 +66,17 @@ proc listOfTorrents(html: string): (seq[string],seq[string]) =
 for i in 0..<len(names):
     echo $i & " - " & $names[i]
 
-que("Pick your file: ", sty = {styleBright}, fg = fgRed)
-let result: int = parseInt(readLine(stdin))
+
+proc ask(what:string, links: seq[string]) = 
+  ## Small procedure to query the user
+  
+  que(what.unindent & " (Quit: q):", sty = {styleBright}, fg = fgRed)
+  try:
+    let option = parseInt(readLine(stdin))
+    openDefaultBrowser(url = links[option])
+    good("See ya mate!")
+  except:
+    bad("Quitting!! ", fg = fgYellow, sty = {styleBright})
 
 
-openDefaultBrowser(url = links[result])
-
-good("See ya mate!")
+ask("Pick your file ", links)
