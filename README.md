@@ -45,6 +45,5 @@ Options:
  --version
 ```
 
-![](screen.png)
 
 P.S.: I am open to PRs, specially on handling errors and properly activating the proxies (see code).
