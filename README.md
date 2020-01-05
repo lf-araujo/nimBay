@@ -10,7 +10,7 @@
 ![](https://img.shields.io/github/issues-pr-raw/lf-araujo/nimBay?style=for-the-badge "PRs")
 ![](https://img.shields.io/github/commit-activity/y/lf-araujo/nimBay?style=for-the-badge)
 ![](https://img.shields.io/github/last-commit/lf-araujo/nimBay?style=for-the-badge "Commits")
-![](https://img.shields.io/twitter/follow/lf_araujo__?label=Follow&style=flat-square)
+![](https://img.shields.io/twitter/follow/lf_araujo__?label=Follow&style=for-the-badge)
 
 # Intro
 
