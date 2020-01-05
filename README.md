@@ -14,7 +14,7 @@
 
 # Intro
 
-I missed [torrench](https://github.com/deechoe/torrench) after it stopped working in my system. I usually would use it to check what is up in the latest releases from PirateBay, so I decided, as a holidays project, to achieve this very simple behaviour of listing latest releases.
+I missed [torrench](https://github.com/deechoe/torrench) after it stopped working in my system. I usually would use it to check what is up in the latest releases, so I decided, as a holidays project, to achieve this very simple behaviour of listing latest releases.
 
 There you go. Enjoy.
 
