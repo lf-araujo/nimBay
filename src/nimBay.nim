@@ -18,10 +18,10 @@ Options:
 
 """
 
-import os,terminal, fab, xmltree, httpClient, docopt, htmlparser
-import strtabs # To access XmlAttributes
-import strutils # To use cmpIgnoreCase
-import browsers
+import os,terminal, xmltree, httpClient, htmlparser, strtabs, strutils, browsers
+
+
+import docopt, fab
 
 let args = docopt(doc, version = "nimBay 0.0.1")
 
@@ -59,7 +59,7 @@ proc listOfTorrents(html: string): (seq[string],seq[string]) =
                 link.add(a.attr("href"))
     return (name, link)
 
-(names, links) = listOfTorrents(html = "https://thepiratebay.org/top/all")
+(names, links) = listOfTorrents(html = "https://thepiratebay.org/top/48hall")
 
 
 
